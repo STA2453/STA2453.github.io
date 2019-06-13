@@ -1,3 +1,1 @@
-# Assignment1
-
-Files for assignment 1
+Website for STA2453 - Data Science, Collaboration, and Communication
