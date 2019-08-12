@@ -23,6 +23,7 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -318,7 +319,6 @@ $(document).ready(function () {
 </ul>
 <p>Students will learn about these topics by working on case studies based on problems that data scientists face in industry and academic research. Many of the cases will involve data collected by an organization (e.g., organization or scientist), using published data, or scraping web pages. All projects will involve some type of collaboration or communication. Students are expected to be familiar with the application of basic statistical methods used for inference (e.g., general linear models), prediction (e.g., linear and logistic regression), and are comfortable with basic data analysis using a programming language such as R or Python. Students will be expected to adopt a reproducible research workflow using tools such as <a href="https://github.com">Github</a>, and <a href="https://rmarkdown.rstudio.com">RMarkdown</a>, or <a href="https://jupyter.org">Jupyter</a>.</p>
 <p>Class time will be a mixture of informal lectures, class discussions, and student presentations.</p>
-<p>This course will not cover specific statistical or machine learning “methods”, nevertheless it’s important that students are able to independently learn and apply unfamilar methods.</p>
 </div>
 <div id="evaluation" class="section level1">
 <h1>Evaluation</h1>
@@ -419,236 +419,504 @@ $(document).ready(function () {
 <div id="tentative-course-schedule" class="section level1">
 <h1>Tentative Course Schedule</h1>
 <p>This is a half-credit that meets in both the fall and winter terms. Class meeting will occur approximately bi-weekly.</p>
-<table>
+<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
-<tr class="header">
-<th align="left">Class</th>
-<th align="left">Date</th>
-<th align="left">Description</th>
-<th align="left">Reading</th>
-<th align="left">Due</th>
+<tr>
+<th style="text-align:left;">
+Class
+</th>
+<th style="text-align:left;">
+Date
+</th>
+<th style="text-align:left;">
+Description
+</th>
+<th style="text-align:left;">
+Reading
+</th>
+<th style="text-align:left;">
+Due
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left">1</td>
-<td align="left">10-Sep</td>
-<td align="left">Introduction to course, hypothesis testing in data analysis</td>
-<td align="left">ISLR: Chapt. 2, 3.1. CASI: Chapt 1, 2</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+1
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+10-Sep
+</td>
+<td style="text-align:left;font-weight: bold;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+Introduction to course, hypothesis testing in data analysis
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+ISLR: Chapt. 2, 3.1. CASI: Chapt 1, 2
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">17-Sep</td>
-<td align="left">No class</td>
-<td align="left"></td>
-<td align="left">In-class lab #1</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+17-Sep
+</td>
+<td style="text-align:left;font-weight: bold;">
+No class
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+In-class lab #1
+</td>
 </tr>
-<tr class="odd">
-<td align="left">2</td>
-<td align="left">24-Sep</td>
-<td align="left">Multiple linear regression</td>
-<td align="left">ISLR: 3.2-3.6.</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+2
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+24-Sep
+</td>
+<td style="text-align:left;font-weight: bold;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+Multiple linear regression
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+ISLR: 3.2-3.6.
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">01-Oct</td>
-<td align="left">No class</td>
-<td align="left"></td>
-<td align="left">In-class lab #2</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+01-Oct
+</td>
+<td style="text-align:left;font-weight: bold;">
+No class
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+In-class lab #2
+</td>
 </tr>
-<tr class="odd">
-<td align="left">3</td>
-<td align="left">08-Oct</td>
-<td align="left">Logistic regression and other linear models (GLM)</td>
-<td align="left">ISLR: Chapt 4; CASI: Chapt 8</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+3
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+08-Oct
+</td>
+<td style="text-align:left;font-weight: bold;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+Logistic regression and other linear models (GLM)
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+ISLR: Chapt 4; CASI: Chapt 8
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">15-Oct</td>
-<td align="left">No class</td>
-<td align="left"></td>
-<td align="left">In-class lab #3</td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+15-Oct
+</td>
+<td style="text-align:left;font-weight: bold;">
+No class
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+In-class lab #3
+</td>
 </tr>
-<tr class="odd">
-<td align="left">4</td>
-<td align="left">22-Oct</td>
-<td align="left">Introduction of Project #1</td>
-<td align="left">TBD</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+4
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+22-Oct
+</td>
+<td style="text-align:left;font-weight: bold;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+Introduction of Project #1
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+TBD
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">29-Oct</td>
-<td align="left">No class</td>
-<td align="left"></td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+29-Oct
+</td>
+<td style="text-align:left;font-weight: bold;">
+No class
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">05-Nov</td>
-<td align="left">Fall Reading Week - No class</td>
-<td align="left"></td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+05-Nov
+</td>
+<td style="text-align:left;font-weight: bold;">
+Fall Reading Week - No class
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="even">
-<td align="left">5</td>
-<td align="left">12-Nov</td>
-<td align="left">Data visualization</td>
-<td align="left"></td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+5
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+12-Nov
+</td>
+<td style="text-align:left;font-weight: bold;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+Data visualization
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">19-Nov</td>
-<td align="left">No class</td>
-<td align="left"></td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+19-Nov
+</td>
+<td style="text-align:left;font-weight: bold;">
+No class
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="even">
-<td align="left">6</td>
-<td align="left">26-Nov</td>
-<td align="left">Student presentations for project #1</td>
-<td align="left"></td>
-<td align="left">Project #1 presentations</td>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+6
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+26-Nov
+</td>
+<td style="text-align:left;font-weight: bold;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+Student presentations for project #1
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+Project #1 presentations
+</td>
 </tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">03-Dec</td>
-<td align="left">No class</td>
-<td align="left"></td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+03-Dec
+</td>
+<td style="text-align:left;font-weight: bold;">
+No class
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">10-Dec</td>
-<td align="left">Winter Break</td>
-<td align="left"></td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+10-Dec
+</td>
+<td style="text-align:left;font-weight: bold;">
+Winter Break
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">17-Dec</td>
-<td align="left">Winter Break</td>
-<td align="left"></td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+17-Dec
+</td>
+<td style="text-align:left;font-weight: bold;">
+Winter Break
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">24-Dec</td>
-<td align="left">Winter Break</td>
-<td align="left"></td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+24-Dec
+</td>
+<td style="text-align:left;font-weight: bold;">
+Winter Break
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">31-Dec</td>
-<td align="left">Winter Break</td>
-<td align="left"></td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+31-Dec
+</td>
+<td style="text-align:left;font-weight: bold;">
+Winter Break
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">07-Jan</td>
-<td align="left">No class</td>
-<td align="left"></td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+07-Jan
+</td>
+<td style="text-align:left;font-weight: bold;">
+No class
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left">7</td>
-<td align="left">14-Jan</td>
-<td align="left">Introduction of Project #2</td>
-<td align="left">TBD</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+7
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+14-Jan
+</td>
+<td style="text-align:left;font-weight: bold;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+Introduction of Project #2
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+TBD
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">21-Jan</td>
-<td align="left">No class</td>
-<td align="left"></td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+21-Jan
+</td>
+<td style="text-align:left;font-weight: bold;">
+No class
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left">8</td>
-<td align="left">28-Jan</td>
-<td align="left">Unsupervised learning</td>
-<td align="left">ISLR: Chapter 10</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+8
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+28-Jan
+</td>
+<td style="text-align:left;font-weight: bold;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+Unsupervised learning
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+ISLR: Chapter 10
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">04-Feb</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+04-Feb
+</td>
+<td style="text-align:left;font-weight: bold;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left">9</td>
-<td align="left">11-Feb</td>
-<td align="left">Student presentations for project #2</td>
-<td align="left"></td>
-<td align="left">Project #2 presentations</td>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+9
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+11-Feb
+</td>
+<td style="text-align:left;font-weight: bold;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+Student presentations for project #2
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+Project #2 presentations
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">18-Feb</td>
-<td align="left">Reading Week</td>
-<td align="left"></td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+18-Feb
+</td>
+<td style="text-align:left;font-weight: bold;">
+Reading Week
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left">10</td>
-<td align="left">25-Feb</td>
-<td align="left">Introduction of Project #3</td>
-<td align="left">TBD</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+10
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+25-Feb
+</td>
+<td style="text-align:left;font-weight: bold;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+Introduction of Project #3
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+TBD
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">03-Mar</td>
-<td align="left">No class</td>
-<td align="left"></td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+03-Mar
+</td>
+<td style="text-align:left;font-weight: bold;">
+No class
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left">11</td>
-<td align="left">10-Mar</td>
-<td align="left">Trees</td>
-<td align="left">ISLR: Chapt 8, CASI: Chapt 17</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+11
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+10-Mar
+</td>
+<td style="text-align:left;font-weight: bold;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+Trees
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+ISLR: Chapt 8, CASI: Chapt 17
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">17-Mar</td>
-<td align="left">No class</td>
-<td align="left"></td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+17-Mar
+</td>
+<td style="text-align:left;font-weight: bold;">
+No class
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left">12</td>
-<td align="left">24-Mar</td>
-<td align="left">Student presentations for project #3</td>
-<td align="left"></td>
-<td align="left">Project #3 presentations</td>
+<tr>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+12
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+24-Mar
+</td>
+<td style="text-align:left;font-weight: bold;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+Student presentations for project #3
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+</td>
+<td style="text-align:left;font-weight: bold;color: white !important;background-color: #3bd432 !important;">
+Project #3 presentations
+</td>
 </tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">31-Mar</td>
-<td align="left">No class</td>
-<td align="left"></td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+31-Mar
+</td>
+<td style="text-align:left;font-weight: bold;">
+No class
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">07-Apr</td>
-<td align="left">No class</td>
-<td align="left"></td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+07-Apr
+</td>
+<td style="text-align:left;font-weight: bold;">
+No class
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
 </tbody>
 </table>
+<div id="required-readings" class="section level2">
+<h2>Required Readings</h2>
+<p><a href="http://faculty.marshall.usc.edu/gareth-james/ISL/">ISLR</a> (<span class="citation">James et al. (2013)</span>) and <a href="https://web.stanford.edu/~hastie/CASI/">CASI</a> (<span class="citation">Efron and Hastie (2016)</span>) are both are freely available.</p>
+<p>Other readings may be assigned during the course.</p>
+</div>
+</div>
+<div id="course-books" class="section level1 unnumbered">
+<h1>Course Books</h1>
+<div id="refs" class="references">
+<div id="ref-efron2016computer">
+<p>Efron, Bradley, and Trevor Hastie. 2016. <em>Computer Age Statistical Inference</em>. Vol. 5. Cambridge University Press.</p>
+</div>
+<div id="ref-james2013introduction">
+<p>James, Gareth, Daniela Witten, Trevor Hastie, and Robert Tibshirani. 2013. <em>An Introduction to Statistical Learning</em>. Vol. 112. Springer.</p>
+</div>
+</div>
 </div>
 
 
