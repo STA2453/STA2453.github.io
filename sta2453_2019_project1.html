@@ -402,20 +402,26 @@ div.tocify {
 <div id="answers-to-some-common-questions-about-the-submitted-report" class="section level3">
 <h3>Answers to Some Common Questions about the Submitted Report</h3>
 <ol style="list-style-type: decimal">
-<li>It’s not necessary for R/Python code chunks to appear in the report (in R Markdown use the chunk option <code>echo=FALSE</code>, and in Jupyter use the command line tool <code>nbconvert</code> <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>) unless there is some part of the code that will contribute to describing what you have done in the data analysis. Don’t submit a report with warning messages from a library you loaded in your report. For example,</li>
+<li>It’s not necessary for R/Python code chunks to appear in the report (in <a href="https://bookdown.org/yihui/rmarkdown/">R Markdown</a> use the chunk options <code>echo=FALSE</code>, <code>warning = FALSE</code>, <code>message = FALSE</code> and in Jupyter use the command line tool <code>nbconvert</code> <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>) unless there is some part of the code that will contribute to describing what you have done in the data analysis. Don’t submit a report with warning messages from a library you loaded in your report. For example,</li>
 </ol>
+<p><strong>Don’t do this:</strong></p>
+<p>The distribution of XX is shown below …</p>
 <pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## ── Attaching packages ────────────────────</code></pre>
+<pre><code>## ── Attaching packages ──────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──</code></pre>
 <pre><code>## ✔ ggplot2 3.2.0     ✔ purrr   0.3.2
 ## ✔ tibble  2.1.3     ✔ dplyr   0.8.3
 ## ✔ tidyr   0.8.3     ✔ stringr 1.4.0
 ## ✔ readr   1.3.1     ✔ forcats 0.4.0</code></pre>
-<pre><code>## ── Conflicts ──── tidyverse_conflicts() ──
+<pre><code>## ── Conflicts ─────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
 ## ✖ dplyr::filter() masks stats::filter()
 ## ✖ dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>data.frame(x =  rnorm(100)) %&gt;% ggplot(aes(x)) + geom_histogram()</code></pre>
+<pre class="r"><code>set.seed(1028)
+data.frame(x =  rnorm(100)) %&gt;% ggplot(aes(x)) + geom_histogram(colour = &quot;white&quot;, fill = &quot;darkblue&quot;)</code></pre>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
 <p><img src="sta2453_2019_project1_files/figure-html/unnamed-chunk-1-1.png" width="288" /></p>
+<p><strong>Do this:</strong></p>
+<p>The distribution of XX is shown below …</p>
+<p><img src="sta2453_2019_project1_files/figure-html/unnamed-chunk-2-1.png" width="288" /></p>
 <p>Also, you will be submitting your R Markdown/Jupyter Notebook file so I can see all the gory details. This leads to …</p>
 <ol start="2" style="list-style-type: decimal">
 <li><p>What should be in the report? A high level description of what you have done. This leads to …</p></li>
