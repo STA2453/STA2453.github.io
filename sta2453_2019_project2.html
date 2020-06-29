@@ -13,6 +13,7 @@
 
 <title>Project #2</title>
 
+<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -515,7 +516,7 @@ data.frame(x =  rnorm(100)) %&gt;% ggplot(aes(x)) + geom_histogram(colour = &quo
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>For example, to convert foo.ipynb to an html document <strong>without code cells</strong> the command line syntax for nbconvert is: <code>jupyter nbconvert --TemplateExporter.exclude_input=True foo.ipynb</code>. For more information see the documentation <a href="https://nbconvert.readthedocs.io/en/latest/install.html">here</a>.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn1"><p>For example, to convert foo.ipynb to an html document <strong>without code cells</strong> the command line syntax for nbconvert is: <code>jupyter nbconvert --TemplateExporter.exclude_input=True foo.ipynb</code>. For more information see the documentation <a href="https://nbconvert.readthedocs.io/en/latest/install.html">here</a>.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 
@@ -569,7 +570,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

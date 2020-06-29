@@ -13,6 +13,7 @@
 
 <title>STA2453H1Y - Data Science Methods, Collaboration, and Communication</title>
 
+<script src="site_libs/header-attrs/header-attrs.js"></script>
 <script src="site_libs/jquery/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap/css/cosmo.min.css" rel="stylesheet" />
@@ -1081,8 +1082,8 @@ No class
 </div>
 </div>
 <div id="course-books" class="section level1 unnumbered">
-<h1>Course Books</h1>
-<div id="refs" class="references">
+<h1 class="unnumbered">Course Books</h1>
+<div id="refs" class="references hanging-indent">
 <div id="ref-efron2016computer">
 <p>Efron, Bradley, and Trevor Hastie. 2016. <em>Computer Age Statistical Inference</em>. Vol. 5. Cambridge University Press.</p>
 </div>
@@ -1142,7 +1143,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
