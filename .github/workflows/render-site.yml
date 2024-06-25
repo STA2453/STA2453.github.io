@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -21,6 +21,7 @@ jobs:
             any::rmarkdown
             any::knitr
             any::yaml
+            any::prettydoc
             any::devtools
             github::hadley/emo
 
