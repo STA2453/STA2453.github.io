@@ -21,6 +21,8 @@ jobs:
             any::rmarkdown
             any::knitr
             any::yaml
+            any::devtools
+            github::hadley/emo
 
       # - name: Install dependencies
       #   run: |
